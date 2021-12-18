@@ -144,7 +144,12 @@ main {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: #0D1F2D;
+  background-color: #264653;
+}
+
+.navbar.sticky .navbar-inner__logo {
+  display: block;
+  fill: #3282B8;
 }
 
 .navbar-menu {
@@ -183,7 +188,7 @@ main {
   width: 100%;
   min-height: 100vh;
   color: #fff;
-  background-image: url(/img/background-img-1.svg);
+  background-image: url(/img/bgi-dark.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -332,7 +337,7 @@ main {
 }
 
 .about {
-  background-image: url(/img/background-img-1.svg);
+  background-image: url(/img/background-img-2.svg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;

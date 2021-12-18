@@ -14,7 +14,12 @@
 
 .navbar.sticky{
   padding: 15px 0;
-  background: #0D1F2D;
+  background-color: #264653;
+}
+
+.navbar.sticky .navbar-inner__logo{
+  display: block;
+  fill: #3282B8;
 }
 
 .navbar-menu {
