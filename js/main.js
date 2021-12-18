@@ -10,7 +10,14 @@ window.addEventListener("scroll", function(){
 })
 
 // typed.js
-let typed = new Typed(".type", {
+var typed = new Typed(".type", {
+    strings: [ "Frontend developer","Freelancer","UI designer"],
+    typeSpeed: 120,
+    backSpeed: 80,
+    loop: true
+});
+
+var typed = new Typed(".type__second", {
     strings: [ "Frontend developer","Freelancer","UI designer"],
     typeSpeed: 120,
     backSpeed: 80,
