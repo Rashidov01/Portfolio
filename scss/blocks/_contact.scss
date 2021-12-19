@@ -1,6 +1,6 @@
 .contact{
   padding: 80px 0 150px 0;
-  background-image: url(/img/background-img-1.svg);
+  background-image: url(/img/light-bgi.svg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100%;
@@ -10,6 +10,7 @@
 
 .contact__title{
   margin-bottom: 80px;
+  letter-spacing: 2px;
   font-size: 50px;
   font-weight: 800;
   display: flex;
