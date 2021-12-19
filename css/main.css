@@ -573,6 +573,7 @@ main {
 .contact {
   padding: 80px 0 150px 0;
   background-image: url(/img/background-img-1.svg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
