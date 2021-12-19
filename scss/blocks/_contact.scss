@@ -1,8 +1,32 @@
 .contact{
-  padding: 150px;
+  padding: 80px 0 150px 0;
   background-image: url(/img/background-img-1.svg);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   color: #fff;
+}
+
+.contact__title{
+  margin-bottom: 80px;
+  font-size: 50px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin-right: 15px;
+  }
+  &::after{
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin-left: 15px;
+  }
 }
