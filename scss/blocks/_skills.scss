@@ -2,6 +2,7 @@
   background-color: #13293D;
   padding: 80px 0 150px 0;
 }
+
 .skills__list {
   list-style-type: none;
   display: flex;
@@ -9,13 +10,28 @@
   justify-content: space-between;
 }
 
-.skills__title{
-  text-align: center;
+.skills__title {
   color: #fff;
   font-weight: 800;
   font-size: 50px;
   margin-bottom: 100px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &::before {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin-right: 15px;
+  }
 
-.skills__item {
+  &::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin-left: 15px;
+  }
 }
