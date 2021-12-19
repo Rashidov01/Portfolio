@@ -6,14 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="icon" href="./icon/logo-convert.svg" type="icon/logo icon">
   <link rel="stylesheet" href="css/main.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;600&family=Ubuntu:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
     integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -21,6 +23,10 @@
 </head>
 
 <body>
+  <!-- scroll-up-button -->
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
   <!-- navbar -->
   <nav class="navbar">
     <div class="navbar-inner container">
@@ -35,14 +41,15 @@
       </ul>
     </div>
   </nav>
-  <!-- hero -->
+  <!-- main -->
   <main class="main">
+    <!-- hero -->
     <div class="hero">
       <div class="hero-inner container">
         <div class="hero-inner__details">
           <p class="hero-inner__desc">Hello, my name is</p>
           <h1 class="hero-inner__name">Abdulloh Rashidov</h1>
-          <div class="hero-inner__text">And I'm a <span class="type"></span></div>
+          <p class="hero-inner__text">And I'm a <span class="type"></span></p>
         </div>
         <div class="hero-right__code">
           <div class="hero-right__btns">
@@ -106,7 +113,8 @@
                 Backend (NodeJS)
               </h3>
               <p class="service-list__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ullam impedit enim natus, velit numquam optio magni veniam dignissimos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellendus ullam impedit enim natus,
+                velit numquam optio magni veniam dignissimos.
               </p>
             </div>
           </li>
@@ -117,7 +125,9 @@
                 Frontend
               </h3>
               <p class="service-list__text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil fuga porro! At placeat consectetur quo. Cupiditate nobis veritatis dicta, velit quod natus, fugiat odio deleniti doloremque, earum adipisci voluptatibus?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nihil fuga porro! At placeat
+                consectetur quo. Cupiditate nobis veritatis dicta, velit quod natus, fugiat odio deleniti doloremque,
+                earum adipisci voluptatibus?
               </p>
             </div>
           </li>
@@ -128,7 +138,8 @@
                 Backend (Golang)
               </h3>
               <p class="service-list__text">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam error beatae iusto perferendis fugit obcaecati fugiat corporis quas enim.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam error beatae iusto perferendis
+                fugit obcaecati fugiat corporis quas enim.
               </p>
             </div>
           </li>
@@ -142,19 +153,19 @@
         </h2>
         <ul class="skills__list">
           <li class="skills__item">
-            <img class="loogo" src="/icon/html.svg" alt="html logo" width="100" height="80">
+            <img class="loogo" src="/icon/html.svg" alt="html logo" width="90" height="60">
           </li>
           <li class="skills__item">
-            <img src="/icon/css.svg" alt="html logo" width="100" height="80">
+            <img src="/icon/css.svg" alt="html logo" width="90" height="60">
           </li>
           <li class="skills__item">
-            <img src="/icon/js.svg" alt="html logo" width="100" height="80">
+            <img src="/icon/js.svg" alt="html logo" width="90" height="60">
           </li>
           <li class="skills__item">
-            <img src="/icon/bootstrap.svg" alt="html logo" width="100" height="80">
+            <img src="/icon/bootstrap.svg" alt="html logo" width="90" height="60">
           </li>
           <li class="skills__item">
-            <img src="/icon/react.svg" alt="html logo" width="100" height="80">
+            <img src="/icon/react.svg" alt="html logo" width="90" height="60">
           </li>
         </ul>
       </div>
@@ -194,18 +205,75 @@
         </li>
       </ul>
     </section>
+    <section class="projects">
+      <h3 class="projects__title">My projects</h3>
+      <ul class="projects__list">
+        <li class="projects-list__item">
+          <a href="https://telegram-desktop-app-abdulloh.netlify.app" target="_blank">
+            <img class="projects__img" src="img/telegram.png" alt="telegram bootstrap desktop" width="390" height="250">
+            <h3 class="projects__name">Telegram desktop</h3>
+          </a>
+        </li>
+        <li class="projects-list__item">
+          <a href="https://online-books-abdulloh.netlify.app" target="_blank">
+            <img class="projects__img" src="img/book-shop.png" alt="telegram bootstrap desktop" width="390"
+              height="250">
+            <h3 class="projects__name">Book shop</h3>
+          </a>
+        </li>
+        <li class="projects-list__item">
+          <a href="https://sunnyside-abdulloh.netlify.app" target="_blank">
+            <img class="projects__img" src="img/sunnyside.png" alt="telegram bootstrap desktop" width="390"
+              height="250">
+            <h3 class="projects__name">Sunnyside</h3>
+          </a>
+        </li>
+        <li class="projects-list__item">
+          <a href="https://coffee-roaster-abdulloh.netlify.app" target="_blank">
+            <img class="projects__img" src="img/coffee-roaster.png" alt="telegram bootstrap desktop" width="390"
+              height="250">
+            <h3 class="projects__name">Coffee roaster</h3>
+          </a>
+        </li>
+        <li class="projects-list__item">
+          <a href="https://ecommerce-abdulloh.netlify.app" target="_blank">
+            <img class="projects__img" src="img/ecommerce.png" alt="telegram bootstrap desktop" width="390"
+              height="250">
+            <h3 class="projects__name">Ecommerce</h3>
+          </a>
+        </li>
+        <li class="projects-list__item">
+          <a href="https://countries-abdulloh.netlify.app" target="_blank">
+            <img class="projects__img" src="img/countries.png" alt="telegram bootstrap desktop" width="390"
+              height="250">
+            <h3 class="projects__name">Countries</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
     <section class="contact">
       <div class="contact__inner container">
         <h1 class="contact__title">Contact</h1>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in sit provident autem tempore natus sint eum sunt sapiente esse rem ab vitae dolorum voluptatem voluptate alias iste et quas exercitationem, harum nihil impedit aliquid at molestiae. Natus placeat ipsam voluptates ad quam, veniam architecto, molestiae rem distinctio amet corrupti at provident culpa, hic dolorum. Tempora nihil, velit non facilis maxime ab doloribus distinctio illo cupiditate, rem laboriosam repellendus perspiciatis. Soluta inventore reprehenderit vel dolore, eum numquam asperiores cumque cum culpa eveniet distinctio architecto amet unde atque praesentium quasi repellat iure illo magni doloremque. Delectus, reiciendis perspiciatis in sit sunt repellat eligendi ullam, autem nostrum reprehenderit rerum voluptatem aliquam harum ducimus voluptate ex possimus. Quae, officiis nobis dolore, nam, soluta cumque consequuntur facere tempore temporibus consectetur labore placeat molestias odio sunt iure. Laudantium voluptate fuga adipisci error ullam fugit dicta necessitatibus iste officiis voluptatibus modi consectetur, minus explicabo soluta suscipit?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in sit provident autem tempore natus sint
+          eum sunt sapiente esse rem ab vitae dolorum voluptatem voluptate alias iste et quas exercitationem, harum
+          nihil impedit aliquid at molestiae. Natus placeat ipsam voluptates ad quam, veniam architecto, molestiae rem
+          distinctio amet corrupti at provident culpa, hic dolorum. Tempora nihil, velit non facilis maxime ab doloribus
+          distinctio illo cupiditate, rem laboriosam repellendus perspiciatis. Soluta inventore reprehenderit vel
+          dolore, eum numquam asperiores cumque cum culpa eveniet distinctio architecto amet unde atque praesentium
+          quasi repellat iure illo magni doloremque. Delectus, reiciendis perspiciatis in sit sunt repellat eligendi
+          ullam, autem nostrum reprehenderit rerum voluptatem aliquam harum ducimus voluptate ex possimus. Quae,
+          officiis nobis dolore, nam, soluta cumque consequuntur facere tempore temporibus consectetur labore placeat
+          molestias odio sunt iure. Laudantium voluptate fuga adipisci error ullam fugit dicta necessitatibus iste
+          officiis voluptatibus modi consectetur, minus explicabo soluta suscipit?</p>
       </div>
     </section>
   </main>
   <!-- footer -->
   <footer class="footer">
-    <h1>footer</h1>
+    <span class="footer__text">Copyright © 2021 by Abdulloh</span>
   </footer>
+
 
   <script src="./js/main.js"></script>
 </body>

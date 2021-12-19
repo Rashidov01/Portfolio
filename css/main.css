@@ -93,12 +93,12 @@ main {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #396EB0;
+  background-color: #05B2DC;
   right: 30px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  color: #fff;
+  color: #13293D;
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
@@ -145,6 +145,8 @@ main {
 .navbar.sticky {
   padding: 15px 0;
   background-color: #19647E;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .navbar-menu {
@@ -230,6 +232,7 @@ main {
   font-family: 'ubuntu', Arial;
   color: #fff;
   font-size: 40px;
+  margin-bottom: 25px;
 }
 
 /* TODO HERO-RIGHT  */
@@ -350,6 +353,7 @@ main {
   color: #fff;
   width: 100%;
   padding: 80px 0 150px 0;
+  display: block;
 }
 
 .about__wrapper {
@@ -422,8 +426,8 @@ main {
 }
 
 .service {
-  padding: 100px 0;
-  background-image: url(/img/background-img-2.svg);
+  padding: 140px 0 100px;
+  background-image: url(/img/background-img-1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -488,6 +492,8 @@ main {
   background-color: #13293D;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .service-list__item:hover {
@@ -574,95 +580,10 @@ main {
   margin-left: 15px;
 }
 
-.languages__list {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  list-style: none;
-  width: 100%;
-}
-
-.language__text {
-  color: #05B2DC;
-  position: absolute;
-  opacity: 0.4;
-}
-
-.language__text--sass {
-  font-size: 25px;
-  top: 0;
-  left: 40px;
-}
-
-.language__text--figma {
-  top: 30%;
-  left: 35%;
-  font-size: 18px;
-}
-
-.language__text--bem {
-  top: 128px;
-  left: 22%;
-  font-size: 12px;
-}
-
-.language__text--html {
-  top: 30px;
-  left: auto;
-  right: 30px;
-  font-size: 23px;
-}
-
-.language__text--python {
-  top: 490px;
-  left: auto;
-  right: 90px;
-  font-size: 25px;
-}
-
-.language__text--css {
-  top: 200px;
-  left: 40px;
-  font-size: 14px;
-}
-
-.language__text--cplus {
-  top: 400px;
-  left: 70%;
-  font-size: 21px;
-}
-
-.language__text--es {
-  top: 360px;
-  left: 200px;
-  font-size: 20px;
-}
-
-.language__text--sqlite {
-  bottom: -500px;
-  left: 400px;
-  font-size: 15px;
-}
-
-.language__text--jquery {
-  top: 80px;
-  left: 75%;
-  font-size: 18px;
-}
-
-.language__text--res {
-  top: 470px;
-  left: 880px;
-  font-size: 13px;
-}
-
 .contact {
   padding: 80px 0 150px 0;
-  background-image: url(/img/light-bgi.svg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: #13293D;
   width: 100%;
-  background-size: cover;
   color: #fff;
 }
 
@@ -698,7 +619,198 @@ main {
   margin-left: 15px;
 }
 
-.footer {
+.languages__list {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  list-style: none;
+  width: 100%;
+}
+
+.language__text {
+  color: #05B2DC;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.language__text--sass {
+  font-size: 28px;
+  top: 0;
+  left: 40px;
+}
+
+.language__text--figma {
+  top: 30%;
+  left: 35%;
+  font-size: 18px;
+}
+
+.language__text--bem {
+  top: 110px;
+  left: 20%;
+  font-size: 12px;
+}
+
+.language__text--html {
+  top: 30px;
+  left: auto;
+  right: 30px;
+  font-size: 23px;
+}
+
+.language__text--python {
+  top: 370px;
+  left: auto;
+  right: 90px;
+  font-size: 18px;
+}
+
+.language__text--css {
+  top: 250px;
+  left: 40px;
+  font-size: 14px;
+}
+
+.language__text--cplus {
+  top: 400px;
+  left: 70%;
+  font-size: 21px;
+}
+
+.language__text--es {
+  top: 400px;
+  left: 160px;
+  font-size: 20px;
+}
+
+.language__text--sqlite {
+  bottom: -500px;
+  left: 400px;
+  font-size: 15px;
+}
+
+.language__text--jquery {
+  top: 80px;
+  left: 75%;
+  font-size: 18px;
+}
+
+.language__text--res {
+  top: 470px;
+  left: 880px;
+  font-size: 13px;
+}
+
+.projects {
+  background-image: url(/img/bgi-light.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 30px 120px 30px;
+}
+
+.projects__title {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 50px;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects__title::before {
+  content: '';
+  width: 50px;
+  height: 3px;
   background-color: #fff;
+  margin-right: 15px;
+}
+
+.projects__title::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  margin-left: 15px;
+}
+
+.projects__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -18px;
+  margin-bottom: -18px;
+}
+
+.projects__name {
+  color: #05B2DC;
+  text-decoration: underline;
+}
+
+.projects__img {
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
+.projects-list__item {
+  text-decoration: none;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  width: calc(33% - 15px);
+  padding: 10px 8px;
+  border-radius: 10px;
+  background-color: #19647E;
+  text-align: center;
+}
+
+.hero-socials__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-socials__item {
+  margin-right: 15px;
+}
+
+.footer {
+  background-color: #111;
+  padding: 10px 0;
+}
+
+.footer__text {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  font-weight: 100;
 }
 /*# sourceMappingURL=main.css.map */
