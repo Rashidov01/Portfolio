@@ -1,8 +1,5 @@
 .about{
-  // background-image: url(/img/background-img-2.svg);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  background-color: #000;
+  background-color: #13293D;
   color: #fff;
   width: 100%;
   padding: 80px 0 150px 0;
@@ -43,18 +40,17 @@
 .about-details__heading{
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 15px;
 }
 
 .type__second{
-  color: #3282B8;
+  color: #05B2DC;
 }
 
 .about__link{
   text-decoration: none;
   color: #fff;
-  background-color: #3282B8;
-  padding: 15px 10px;
+  background-color: #05B2DC;
+  padding: 10px;
   border-radius: 10px;
   display: inline-block;
 }

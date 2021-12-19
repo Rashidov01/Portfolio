@@ -1,11 +1,10 @@
 .hero {
 	display: flex;
-	background: #111;
 	height: 100vh;
 	width: 100%;
 	min-height: 100vh;
 	color: #fff;
-	background-image: url(/img/bgi-dark.svg);
+	background-image: url(/img/background-img-2.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -35,7 +34,7 @@
 	font-family: 'ubuntu', sans-serif;
 	margin: 0 auto;
 	width: 200px;
-	color: #3282B8;
+	color: #05B2DC;
 
 	&::after {
 		content: '|';
@@ -66,28 +65,42 @@
 .hero-right__button {
 	border: none;
 	margin-right: 8px;
-	width: 12px;
-	height: 12px;
 	border-radius: 50%;
 	cursor: pointer;
+	height: 12px;
+	width: 12px;
 
-	&:hover{
-		background-image: url(/icon/close-btn.svg);
-		background-repeat: no-repeat;
-		background-size: contain;
+	&:first-child{
+		background-color: #F05365 ;
 	}
 
-	&:first-child {
-		background-color: red;
-	}
-
-	&:nth-child(2) {
-		background-color: yellow;
+	&:nth-child(2){
+		background-color: #FCBC2E;
 	}
 
 	&:last-child{
-		margin-right: 0;
-		background-color: green;
+		background-color: #22C940;
+	}
+
+	&.btn__close:hover{
+		background-image: url(/icon/close-btn.svg);
+		background-size: 6px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&.btn__minus:hover{
+		background-image: url(/icon/minus-icon.svg);
+		background-size: 6px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&.btn__resize:hover{
+		background-image: url(/icon/full-screeen-icon.svg);
+		background-size: 6px;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 }
 
@@ -96,7 +109,7 @@
 	border-radius: 10px;
 	width: 440px;
 	margin-left: auto;
-	background-color: #24272a;
+	background-color: #13293D;
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
