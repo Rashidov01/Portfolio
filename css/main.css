@@ -125,7 +125,7 @@ main {
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding: 30px 0;
+  padding: 15px 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -142,8 +142,21 @@ main {
           justify-content: space-between;
 }
 
+.nav-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-name {
+  color: #fff;
+}
+
 .navbar.sticky {
-  padding: 15px 0;
+  padding: 0;
   background-color: #19647E;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -547,6 +560,66 @@ main {
           justify-content: space-between;
 }
 
+.html {
+  color: #30BCED;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.html:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #D84925;
+}
+
+.css {
+  color: #30BCED;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.css:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #1c88c7;
+}
+
+.js {
+  color: #30BCED;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.js:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #f0db4f;
+}
+
+.react {
+  color: #30BCED;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.react:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #61dafb;
+}
+
+.bootstrap {
+  color: #30BCED;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.bootstrap:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #563D7C;
+}
+
 .skills__title {
   color: #fff;
   font-weight: 800;
@@ -773,7 +846,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .projects-list__item {
