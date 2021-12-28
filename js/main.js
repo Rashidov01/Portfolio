@@ -43,3 +43,10 @@ let elToggler = document.querySelector('toggler');
 elBtn.addEventListener('toggle', function(){
     document.body.classList.toggle('dark-theme')
 })
+
+let body = document.querySelector('body')
+let elButton = document.querySelector('.toggle')
+
+elButton.addEventListener('click', function() {
+    body.classList.add('light-theme')
+})

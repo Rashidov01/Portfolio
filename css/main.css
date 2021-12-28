@@ -42,6 +42,10 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
 }
 
+body .light-theme {
+  background-color: #fff;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -920,7 +924,7 @@ main {
 
 .projects {
   padding: 100px 30px 120px 30px;
-  background-image: url(../../img/bgi-light.svg);
+  background-image: url(../../img/light-bgi.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
