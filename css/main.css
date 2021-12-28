@@ -453,6 +453,12 @@ main {
   padding: 10px;
   border-radius: 10px;
   display: inline-block;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.about__link:hover {
+  opacity: 0.8;
 }
 
 .about__wrapper-text {
