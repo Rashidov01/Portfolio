@@ -1,13 +1,13 @@
 .scroll-up-btn{
   position: fixed;
-  height: 45px;
-  width: 42px;
-  background-color: #05B2DC;
   right: 30px;
   bottom: 10px;
   text-align: center;
+  background-color: $primary-color;
+  color: $main-background-color;
+  width: 40px;
+  height: 45px;
   line-height: 45px;
-  color: #13293D;
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;

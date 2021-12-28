@@ -1,21 +1,20 @@
 .languages__list {
+  @include list-unstyled;
   position: absolute;
   top: 0;
-  width: 100%;
-  list-style: none;
   width: 100%;
 }
 
 .language__text {
-  color: #05B2DC;
+  color: $primary-color;
   position: absolute;
   opacity: 0.2;
 }
 
 .language__text--sass {
-  font-size: 28px;
   top: 0;
   left: 40px;
+  font-size: 28px;
 }
 
 .language__text--figma {

@@ -1,18 +1,16 @@
 .skills {
-  background-color: #13293D;
   padding: 80px 0 150px 0;
+  background-color: $main-background-color;
   position: relative;
 }
 
 .skills__list {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include list-unstyled;
+  @include d-flex(space-between);
 }
 
 .html{
-  color: #30BCED;
+  color: $primary-color;
   transition: all 0.6s ease;
 
   &:hover{
@@ -22,7 +20,7 @@
 }
 
 .css{
-  color: #30BCED;
+  color: $primary-color;
   transition: all 0.5s ease;
 
   &:hover{
@@ -32,7 +30,7 @@
 }
 
 .js{
-  color: #30BCED;
+  color: $primary-color;
   transition: all 0.5s ease;
 
   &:hover{
@@ -42,7 +40,7 @@
 }
 
 .react{
-  color: #30BCED;
+  color: $primary-color;
   transition: all 0.5s ease;
 
   &:hover{
@@ -52,7 +50,7 @@
 }
 
 .bootstrap{
-  color: #30BCED;
+  color: $primary-color;
   transition: all 0.5s ease;
 
   &:hover{
@@ -62,29 +60,27 @@
 }
 
 .skills__title {
-  color: #fff;
+  margin-bottom: 100px;
+  @include d-flex(center);
+  color: $light-color;
   font-weight: 800;
   font-size: 50px;
-  margin-bottom: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: 2px;
 
   &::before {
-    content: '';
+    margin-right: 15px;
+    background-color: $light-color;
     width: 50px;
     height: 3px;
-    background-color: #fff;
-    margin-right: 15px;
+    content: '';
   }
 
   &::after {
-    content: '';
+    margin-left: 15px;
     width: 50px;
     height: 3px;
-    background-color: #fff;
-    margin-left: 15px;
+    background-color: $light-color;
+    content: '';
   }
 }
 

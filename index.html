@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="icon" href="./icon/my-logo-bold.png" type="icon/logo icon">
+  <link rel="icon" href="./icon/logo.svg" type="icon/logo icon">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
     <div class="navbar-inner container">
       <div class="nav-inner">
         <a href="index.html">
-          <img src="icon/my-logo-bold.png" alt="" width="60" height="60">
+          <img src="icon/logo.svg" alt="logo" width="60" height="60">
         </a>
       </div>
       <ul class="navbar-menu">
@@ -41,6 +41,7 @@
         <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Services</a></li>
         <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Skills</a></li>
         <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Contact</a></li>
+        <button class="toogler theme-icon" type="button"></button>
       </ul>
     </div>
   </nav>
@@ -53,6 +54,23 @@
           <p class="hero-inner__desc">Hello, my name is</p>
           <h1 class="hero-inner__name">Abdulloh Rashidov</h1>
           <p class="hero-inner__text">And I'm a <span class="type"></span></p>
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link" href="">
+                <img src="icon/github2.svg" alt="git hub icon" width="30" height="30">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="">
+                <img src="icon/telegram.svg" alt="telegram icon" width="30" height="30">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="">
+                <img src="icon/linkedin.svg" alt="linkedin hub icon" width="30" height="30">
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="hero-right__code">
           <div class="hero-right__btns">
@@ -149,6 +167,7 @@
         </ul>
       </div>
     </section>
+    <!-- skills -->
     <section class="skills">
       <div class="skillls__inner container">
         <h2 class="skills__title">
@@ -165,7 +184,8 @@
                 fill="#fff" /></svg>
           </li>
           <li class="skills__item">
-            <svg class="css" fill="none" height="110" width="110" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53">
+            <svg class="css" fill="none" height="110" width="110" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 124 141.53">
               <path d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z" fill="currentColor" />
               <path d="M62.468 129.275V12.085l51.064.17-9.106 104.85z" fill="currentColor" />
               <path
@@ -180,7 +200,7 @@
                 fill="#000" /></svg>
           </li>
           <li class="skills__item">
-            <svg class="react"viewBox="175.7 78 490.6 436.9" width="110" height="110"
+            <svg class="react" viewBox="175.7 78 490.6 436.9" width="110" height="110"
               xmlns="http://www.w3.org/2000/svg">
               <g fill="currentColor">
                 <path
@@ -189,7 +209,6 @@
               </g>
             </svg>
           </li>
-
           <li class="skills__item">
             <svg class="bootstrap" width="110" height="110" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="xMinYMin meet">
@@ -238,55 +257,113 @@
         </li>
       </ul>
     </section>
+    <!-- projects -->
     <section class="projects">
       <h3 class="projects__title">My projects</h3>
       <ul class="projects__list">
         <li class="projects-list__item">
           <a href="https://telegram-desktop-app-abdulloh.netlify.app" target="_blank">
-            <img class="projects__img" src="img/telegram.png" alt="telegram bootstrap desktop" width="390" height="250">
+            <img class="projects__img" src="img/telegram.webp" alt="telegram bootstrap desktop" width="390"
+              height="380">
             <h3 class="projects__name">Telegram desktop</h3>
           </a>
         </li>
         <li class="projects-list__item">
           <a href="https://online-books-abdulloh.netlify.app" target="_blank">
-            <img class="projects__img" src="img/bookshop.png" alt="telegram bootstrap desktop" width="390" height="250">
+            <img class="projects__img" src="img/bookshop.webp" alt="telegram bootstrap desktop" width="390"
+              height="380">
             <h3 class="projects__name">Book shop</h3>
           </a>
         </li>
         <li class="projects-list__item">
           <a href="https://sunnyside-abdulloh.netlify.app" target="_blank">
-            <img class="projects__img" src="img/sunnyside.png" alt="telegram bootstrap desktop" width="390"
-              height="250">
+            <img class="projects__img" src="img/sunnyside.webp" alt="telegram bootstrap desktop" width="390"
+              height="380">
             <h3 class="projects__name">Sunnyside</h3>
           </a>
         </li>
         <li class="projects-list__item">
           <a href="https://coffee-roaster-abdulloh.netlify.app" target="_blank">
-            <img class="projects__img" src="img/coffee-roaster.png" alt="telegram bootstrap desktop" width="390"
-              height="250">
+            <img class="projects__img" src="img/coffee-roaster.webp" alt="telegram bootstrap desktop" width="390"
+              height="380">
             <h3 class="projects__name">Coffee roaster</h3>
           </a>
         </li>
         <li class="projects-list__item">
           <a href="https://ecommerce-main-abdulloh.netlify.app" target="_blank">
-            <img class="projects__img" src="img/ecommerce.png" alt="telegram bootstrap desktop" width="390"
-              height="250">
+            <img class="projects__img" src="img/ecommerce.webp" alt="telegram bootstrap desktop" width="390"
+              height="380">
             <h3 class="projects__name">Ecommerce</h3>
           </a>
         </li>
         <li class="projects-list__item">
           <a href="https://countries-abdulloh.netlify.app" target="_blank">
-            <img class="projects__img" src="img/countries.png" alt="telegram bootstrap desktop" width="390"
-              height="250">
+            <img class="projects__img" src="img/countries.webp" alt="telegram bootstrap desktop" width="390"
+              height="380">
             <h3 class="projects__name">Countries</h3>
           </a>
         </li>
       </ul>
     </section>
+    <!-- contact -->
     <section class="contact">
+      <h2 class="contact__title">Contact me</h2>
       <div class="contact__inner container">
-        <h1 class="contact__title">Contact</h1>
+        <div class="contact-inner__info">
+          <ul class="contact__list">
+            <li class="contact-list__item">
+              <img class="contact-list__icon" src="icon/user-icon.svg" alt="user icon" width="30" height="30">
+              <div class="contact-list__details">
+                <span class="contact-list__details-name">Name</span>
+                <h3 class="conact-list__details-info">Abdulloh Rashidov</h3>
+              </div>
+            </li>
+            <li class="contact-list__item">
+              <img class="contact-list__icon" src="icon/location-icon.svg" alt="location icon" width="30"
+                height="30">
+              <div class="contact-list__details">
+                <span class="contact-list__details-name">Address</span>
+                <h3 class="conact-list__details-info">Tashkent, Uzbekistan</h3>
+              </div>
+            </li>
+            <li class="contact-list__item">
+              <img class="contact-list__icon" src="icon/internet.svg" alt="internet icon" width="30" height="30">
+              <div class="contact-list__details">
+                <span class="contact-list__details-name">Email</span>
+                <h3 class="conact-list__details-info">avazbekrashidov6@gmail.com</h3>
+              </div>
+            </li>
+          </ul>
 
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link" href="">
+                <img src="icon/github2.svg" alt="git hub icon" width="30" height="30">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="">
+                <img src="icon/telegram.svg" alt="telegram icon" width="30" height="30">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="">
+                <img src="icon/linkedin.svg" alt="linkedin hub icon" width="30" height="30">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-inner__form">
+          <form class="contact-form__wrapper" action="">
+            <input class="contact-form__input contact__name" type="text" placeholder="name">
+            <input class="contact-form__input contact__email" type="text" placeholder="email">
+            <input class="contact-form__input contact__subject" type="text" placeholder="subject">
+            <textarea class="contact-form__input contact__textarea" name="meassage me textarea" placeholder="message me"
+              cols="30" rows="10"></textarea>
+          </form>
+
+          <button class="contact-inner__btn" type="submit">submit</button>
+        </div>
       </div>
     </section>
   </main>

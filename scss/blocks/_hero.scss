@@ -3,10 +3,9 @@
 	height: 100vh;
 	width: 100%;
 	min-height: 100vh;
-	color: #fff;
-	background-image: url(/img/background-img-2.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	color: $light-color;
+	background-image: url(../../img/background-img-2.svg);
+	@include background-image(cover);
 	background-attachment: fixed;
 }
 
@@ -17,24 +16,24 @@
 }
 
 .hero-inner__desc {
-	font-family: 'ubuntu', sans-serif;
+	font-family: $font-ubuntu;
 	margin-bottom: 10px;
 	font-weight: 600;
 	font-size: 25px;
 }
 
 .hero-inner__name {
-	font-family: 'ubuntu', sans-serif;
+	font-family: $font-ubuntu;
 	font-size: 65px;
 	font-weight: 800;
 	margin-bottom: 10px;
 }
 
 .type {
-	font-family: 'ubuntu', sans-serif;
+	font-family: $font-ubuntu;
 	margin: 0 auto;
 	width: 200px;
-	color: #05B2DC;
+	color: $primary-color;
 
 	&::after {
 		content: '|';
@@ -44,74 +43,66 @@
 }
 
 .hero-inner__text {
-	font-family: 'ubuntu', Arial;
-	color: #fff;
+	font-family: $font-ubuntu;
+	color: $light-color;
 	font-size: 40px;
 	margin-bottom: 25px;
 }
 
 /* TODO HERO-RIGHT  */
 .hero-right__list {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+	@include list-unstyled;
 }
 
 .hero-right__btns {
+	margin-bottom: 30px;
 	display: flex;
 	align-items: center;
-	margin-bottom: 30px;
 }
 
 .hero-right__button {
-	border: none;
 	margin-right: 8px;
-	border-radius: 50%;
-	cursor: pointer;
 	height: 12px;
 	width: 12px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
 
 	&:first-child{
-		background-color: #F05365 ;
+		background-color: $red-color ;
 	}
 
 	&:nth-child(2){
-		background-color: #FCBC2E;
+		background-color: $yellow-color;
 	}
 
 	&:last-child{
-		background-color: #22C940;
+		background-color: $green-color;
 	}
 
 	&.btn__close:hover{
 		background-image: url(/icon/close-btn.svg);
-		background-size: 6px;
-		background-repeat: no-repeat;
-		background-position: center;
+		@include background-image (6px);
 	}
 
 	&.btn__minus:hover{
 		background-image: url(/icon/minus-icon.svg);
-		background-size: 6px;
-		background-repeat: no-repeat;
-		background-position: center;
+		@include background-image (6px);
 	}
 
 	&.btn__resize:hover{
 		background-image: url(/icon/full-screeen-icon.svg);
-		background-size: 6px;
-		background-repeat: no-repeat;
-		background-position: center;
+		@include background-image (6px);
 	}
 }
 
 .hero-right__code {
-	padding: 15px 25px 25px 15px;
-	border-radius: 10px;
-	width: 440px;
 	margin-left: auto;
-	background-color: #13293D;
+	padding: 15px 25px 25px 15px;
+	width: 440px;
+	background-color: $main-background-color;
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+	border-radius: 10px;
 }
 
 .hero-right__item {
@@ -119,7 +110,7 @@
 		overflow-x: hidden;
 		font-size: 13px;
 		font-weight: 300;
-		color: #fff;
+		color: $light-color;
 		letter-spacing: 0.04px;
 	}
 

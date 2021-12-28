@@ -1,10 +1,10 @@
 .footer{
-  background-color: #111;
-  padding: 10px 0;
+  padding: 15px 0;
+  background-color: $dark-color;
 }
 
 .footer__text{
-  color: #fff;
+  color: $light-color;
   text-align: center;
   display: block;
   font-size: 12px;

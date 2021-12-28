@@ -36,3 +36,10 @@ $('.scroll-up-btn').click(function(){
     // removing smooth scroll on slide-up button click
     $('html').css("scrollBehavior", "auto");
 });
+
+//mode 
+let elToggler = document.querySelector('toggler');
+
+elBtn.addEventListener('toggle', function(){
+    document.body.classList.toggle('dark-theme')
+})
