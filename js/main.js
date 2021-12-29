@@ -23,13 +23,6 @@ var typed = new Typed(".type", {
     loop: true
 });
 
-var typed = new Typed(".type__second", {
-    strings: [ "Frontend developer","Freelancer","UI designer"],
-    typeSpeed: 160,
-    backSpeed: 120,
-    loop: true
-});
-
 //scroll-up
 $('.scroll-up-btn').click(function(){
     $('html').animate({scrollTop: 0});
@@ -42,13 +35,7 @@ $('.scroll-up-btn').click(function(){
         $('html').css("scrollBehavior", "smooth");
     });
 
-//mode 
-let elToggler = document.querySelector('toggler');
-
-elBtn.addEventListener('toggle', function(){
-    document.body.classList.toggle('dark-theme')
-})
-
+//mode
 let elButton = document.querySelector('.navbar-menu__hamburg');
 let elNav = document.querySelector('.header__nav');
 
