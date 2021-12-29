@@ -8,6 +8,7 @@
   <title>Portfolio</title>
   <link rel="icon" href="./icon/logo.svg" type="icon/logo icon">
   <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +51,7 @@
     <!-- hero -->
     <div class="hero" id="home">
       <div class="hero-inner container">
-        <div class="hero-inner__details">
+        <div class="hero-inner__details" data-aos="fade-up">
           <p class="hero-inner__desc">Hello, my name is</p>
           <h1 class="hero-inner__name">Abdulloh Rashidov</h1>
           <p class="hero-inner__text">And I'm a <span class="type"></span></p>
@@ -66,25 +67,25 @@
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://t.me/Rashidov_571" target="_blank">
-                <svg class="socials__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30"
-                  height="30">
+                <svg class="socials__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                  width="30" height="30">
                   <path
                     d="M 25.154297 3.984375 C 24.829241 3.998716 24.526384 4.0933979 24.259766 4.2011719 C 24.010014 4.3016357 23.055766 4.7109106 21.552734 5.3554688 C 20.048394 6.0005882 18.056479 6.855779 15.931641 7.7695312 C 11.681964 9.5970359 6.9042108 11.654169 4.4570312 12.707031 C 4.3650097 12.746607 4.0439208 12.849183 3.703125 13.115234 C 3.3623292 13.381286 3 13.932585 3 14.546875 C 3 15.042215 3.2360676 15.534319 3.5332031 15.828125 C 3.8303386 16.121931 4.144747 16.267067 4.4140625 16.376953 C 5.3912284 16.775666 8.4218473 18.015862 8.9941406 18.25 C 9.195546 18.866983 10.29249 22.222526 10.546875 23.044922 C 10.714568 23.587626 10.874198 23.927519 11.082031 24.197266 C 11.185948 24.332139 11.306743 24.45034 11.453125 24.542969 C 11.511635 24.579989 11.575789 24.608506 11.640625 24.634766 L 11.644531 24.636719 C 11.659471 24.642719 11.67235 24.652903 11.6875 24.658203 C 11.716082 24.668202 11.735202 24.669403 11.773438 24.677734 C 11.925762 24.726927 12.079549 24.757812 12.216797 24.757812 C 12.80196 24.757814 13.160156 24.435547 13.160156 24.435547 L 13.181641 24.419922 L 16.191406 21.816406 L 19.841797 25.269531 C 19.893193 25.342209 20.372542 26 21.429688 26 C 22.057386 26 22.555319 25.685026 22.875 25.349609 C 23.194681 25.014192 23.393848 24.661807 23.478516 24.21875 L 23.478516 24.216797 C 23.557706 23.798129 26.921875 6.5273437 26.921875 6.5273438 L 26.916016 6.5507812 C 27.014496 6.1012683 27.040303 5.6826405 26.931641 5.2695312 C 26.822973 4.8564222 26.536648 4.4608905 26.181641 4.2480469 C 25.826669 4.0352506 25.479353 3.9700339 25.154297 3.984375 z M 24.966797 6.0742188 C 24.961997 6.1034038 24.970391 6.0887279 24.962891 6.1230469 L 24.960938 6.1347656 L 24.958984 6.1464844 C 24.958984 6.1464844 21.636486 23.196371 21.513672 23.845703 C 21.522658 23.796665 21.481573 23.894167 21.439453 23.953125 C 21.379901 23.91208 21.257812 23.859375 21.257812 23.859375 L 21.238281 23.837891 L 16.251953 19.121094 L 12.726562 22.167969 L 13.775391 17.96875 C 13.775391 17.96875 20.331562 11.182109 20.726562 10.787109 C 21.044563 10.471109 21.111328 10.360953 21.111328 10.251953 C 21.111328 10.105953 21.035234 10 20.865234 10 C 20.712234 10 20.506484 10.14875 20.396484 10.21875 C 18.963383 11.132295 12.671823 14.799141 9.8515625 16.439453 C 9.4033769 16.256034 6.2896636 14.981472 5.234375 14.550781 C 5.242365 14.547281 5.2397349 14.548522 5.2480469 14.544922 C 7.6958673 13.491784 12.47163 11.434667 16.720703 9.6074219 C 18.84524 8.6937992 20.838669 7.8379587 22.341797 7.1933594 C 23.821781 6.5586849 24.850125 6.1218894 24.966797 6.0742188 z" />
-                  </svg>
+                </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.linkedin.com/in/avazbek-rashidov-065290209/" target="_blank">
-                <svg class="socials__icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+                <svg class="socials__icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M2.4 0H21.6C22.92 0 24 1.08 24 2.4V21.6C24 22.92 22.92 24 21.6 24H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0ZM3.6 20.4H7.2V9.6H3.6V20.4ZM5.4 7.56C4.2 7.56 3.24 6.6 3.24 5.4C3.24 4.2 4.2 3.24 5.4 3.24C6.6 3.24 7.56 4.2 7.56 5.4C7.56 6.6 6.6 7.56 5.4 7.56ZM16.8 20.4H20.4V13.56C20.4 11.28 18.48 9.36 16.2 9.36C15.12 9.36 13.8 10.08 13.2 11.04V9.6H9.6V20.4H13.2V14.04C13.2 13.08 14.04 12.24 15 12.24C15.96 12.24 16.8 13.08 16.8 14.04V20.4Z"
-                   />
+                    d="M2.4 0H21.6C22.92 0 24 1.08 24 2.4V21.6C24 22.92 22.92 24 21.6 24H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0ZM3.6 20.4H7.2V9.6H3.6V20.4ZM5.4 7.56C4.2 7.56 3.24 6.6 3.24 5.4C3.24 4.2 4.2 3.24 5.4 3.24C6.6 3.24 7.56 4.2 7.56 5.4C7.56 6.6 6.6 7.56 5.4 7.56ZM16.8 20.4H20.4V13.56C20.4 11.28 18.48 9.36 16.2 9.36C15.12 9.36 13.8 10.08 13.2 11.04V9.6H9.6V20.4H13.2V14.04C13.2 13.08 14.04 12.24 15 12.24C15.96 12.24 16.8 13.08 16.8 14.04V20.4Z" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="hero-right__code">
+        <div class="hero-right__code" data-aos="fade-up">
           <div class="hero-right__btns">
             <button class="hero-right__button btn__close" type="button"></button>
             <button class="hero-right__button btn__minus" type="button"></button>
@@ -118,14 +119,20 @@
     </div>
     <!-- about me -->
     <section class="about" id="about">
-      <h2 class="about__title">About me</h2>
+      <h2 class="about__title" data-aos="zoom-in">About me</h2>
       <div class="about-inner container">
         <div class="about__wrapper">
-          <img class="about-wrapper__icon" src="/icon/web-development.svg" alt="react" width="180" height="150">
-          <div class="about__details">
+          <img class="about-wrapper__icon" src="/icon/web-development.svg" data-aos="fade-up-right" alt="react"
+            width="180" height="150">
+          <div class="about__details" data-aos="fade-up-left">
             <div class="about-details__heading">I'm Abdulloh and I'm a <span class="type__second"></span></div>
             <p class="about-wrapper__text">
-              I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in Tashkent, UZB, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+              I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
+              accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I
+              mostly use React, but I can adapt to whatever tools are required. I’m based in Tashkent, UZB, but I’m
+              happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors.
+              I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my
+              work.
             </p>
             <a class="about__link" href="../Avazbek's resume .pdf" download>download CV</a>
           </div>
@@ -135,9 +142,9 @@
     <!-- our service -->
     <section class="service" id="service">
       <div class="service__inner container">
-        <h2 class="service__title">Our service</h2>
+        <h2 class="service__title" data-aos="zoom-in">Our service</h2>
         <ul class="service__list">
-          <li class="service-list__item">
+          <li class="service-list__item" data-aos="fade-up-right">
             <div class="service-list__item-inner">
               <i class="icon fas fa-code"></i>
               <div class="service-list__info">
@@ -152,7 +159,7 @@
               </div>
             </div>
           </li>
-          <li class="service-list__item">
+          <li class="service-list__item" data-aos="zoom-in">
             <div class="service-list__item-inner">
               <i class="icon  fas fa-paint-brush"></i>
               <div class="service-list__info">
@@ -167,7 +174,7 @@
               </div>
             </div>
           </li>
-          <li class="service-list__item">
+          <li class="service-list__item" data-aos="fade-up-left">
             <div class="service-list__item-inner">
               <i class="icon fas fa-code"></i>
               <div class="service-list__info">
@@ -187,11 +194,11 @@
     <!-- skills -->
     <section class="skills" id="skills">
       <div class="skillls__inner container">
-        <h2 class="skills__title">
+        <h2 class="skills__title" data-aos="zoom-in">
           My skills
         </h2>
         <ul class="skills__list">
-          <li class="skills__item">
+          <li class="skills__item" data-aos="zoom-in-left">
             <svg class="skills__icon html" fill="currentColor" height="110" width="110"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 141.53199999999998">
               <path d="M10.383 126.894L0 0l124 .255-10.979 126.639-50.553 14.638z" fill="currentColor" />
@@ -200,7 +207,7 @@
                 d="M99.49 41.362l1.446-15.49H22.383l4.34 47.49h54.213L78.81 93.617l-17.362 4.68-17.617-5.106-.936-12.085H27.319l2.128 24.681 32 8.936 32.255-8.936 4.34-48.17H41.107L39.49 41.362z"
                 fill="#fff" /></svg>
           </li>
-          <li class="skills__item">
+          <li class="skills__item" data-aos="zoom-in-left">
             <svg class="skills__icon css" fill="none" height="110" width="110" xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 124 141.53">
               <path d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z" fill="currentColor" />
@@ -209,7 +216,7 @@
                 d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z"
                 fill="#fff" /></svg>
           </li>
-          <li class="skills__item">
+          <li class="skills__item" data-aos="zoom-out-down">
             <svg class="skills__icon js" xmlns="http://www.w3.org/2000/svg" width="110" height="110"
               viewBox="0 0 1052 1052">
               <path fill="currentColor" d="M0 0h1052v1052H0z" />
@@ -217,7 +224,7 @@
                 d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
                 fill="#000" /></svg>
           </li>
-          <li class="skills__item">
+          <li class="skills__item" data-aos="zoom-in-right">
             <svg class="skills__icon react" viewBox="175.7 78 490.6 436.9" width="110" height="110"
               xmlns="http://www.w3.org/2000/svg">
               <g fill="currentColor">
@@ -227,7 +234,7 @@
               </g>
             </svg>
           </li>
-          <li class="skills__item">
+          <li class="skills__item" data-aos="zoom-in-right">
             <svg class="skills__icon bootstrap" width="110" height="110" viewBox="0 0 256 256"
               xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
               <path
@@ -277,44 +284,48 @@
     </section>
     <!-- projects -->
     <section class="projects" id="projects">
-      <h3 class="projects__title">My projects</h3>
+      <h3 class="projects__title" data-aos="zoom-in">My projects</h3>
       <ul class="projects__list">
-        <li class="projects-list__item">
+        <li class="projects-list__item" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <a href="https://telegram-desktop-app-abdulloh.netlify.app" target="_blank">
             <img class="projects__img" src="img/telegram.webp" alt="telegram bootstrap desktop" width="390"
               height="380">
             <h3 class="projects__name">Telegram desktop</h3>
           </a>
         </li>
-        <li class="projects-list__item">
+        <li class="projects-list__item" data-aos="zoom-out">
           <a href="https://online-books-abdulloh.netlify.app" target="_blank">
             <img class="projects__img" src="img/bookshop.webp" alt="telegram bootstrap desktop" width="390"
               height="380">
             <h3 class="projects__name">Book shop</h3>
           </a>
         </li>
-        <li class="projects-list__item">
+        <li class="projects-list__item" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
           <a href="https://sunnyside-abdulloh.netlify.app" target="_blank">
             <img class="projects__img" src="img/sunnyside.webp" alt="telegram bootstrap desktop" width="390"
               height="380">
             <h3 class="projects__name">Sunnyside</h3>
           </a>
         </li>
-        <li class="projects-list__item">
+        <li class="projects-list__item" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <a href="https://coffee-roaster-abdulloh.netlify.app" target="_blank">
             <img class="projects__img" src="img/coffee-roaster.webp" alt="telegram bootstrap desktop" width="390"
               height="380">
             <h3 class="projects__name">Coffee roaster</h3>
           </a>
         </li>
-        <li class="projects-list__item">
+        <li class="projects-list__item" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <a href="https://ecommerce-main-abdulloh.netlify.app" target="_blank">
             <img class="projects__img" src="img/ecommerce.webp" alt="telegram bootstrap desktop" width="390"
               height="380">
             <h3 class="projects__name">Ecommerce</h3>
           </a>
         </li>
-        <li class="projects-list__item">
+        <li class="projects-list__item" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <a href="https://countries-abdulloh.netlify.app" target="_blank">
             <img class="projects__img" src="img/countries.webp" alt="telegram bootstrap desktop" width="390"
               height="380">
@@ -327,9 +338,9 @@
     <section class="contact" id="contact">
       <div class="contact__inner container">
         <div class="contact__socials">
-          <h2 class="contact__title">Get in touch</h2>
-          <div class="contact-socials__detail">
-            <p class="contact-socials__text">
+          <h2 class="contact__title" data-aos="zoom-in">Get in touch</h2>
+          <div class="contact-socials__detail" data-aos="fade-up">
+            <p class="contact-socials__text" >
               I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role
               and am open to a wide range of opportunities. My preference would be to find a position in a company in
               London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working
@@ -348,19 +359,19 @@
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="https://t.me/Rashidov_571" target="_blank">
-                  <svg class="socials__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30"
-                    height="30">
+                  <svg class="socials__icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                    width="30" height="30">
                     <path
                       d="M 25.154297 3.984375 C 24.829241 3.998716 24.526384 4.0933979 24.259766 4.2011719 C 24.010014 4.3016357 23.055766 4.7109106 21.552734 5.3554688 C 20.048394 6.0005882 18.056479 6.855779 15.931641 7.7695312 C 11.681964 9.5970359 6.9042108 11.654169 4.4570312 12.707031 C 4.3650097 12.746607 4.0439208 12.849183 3.703125 13.115234 C 3.3623292 13.381286 3 13.932585 3 14.546875 C 3 15.042215 3.2360676 15.534319 3.5332031 15.828125 C 3.8303386 16.121931 4.144747 16.267067 4.4140625 16.376953 C 5.3912284 16.775666 8.4218473 18.015862 8.9941406 18.25 C 9.195546 18.866983 10.29249 22.222526 10.546875 23.044922 C 10.714568 23.587626 10.874198 23.927519 11.082031 24.197266 C 11.185948 24.332139 11.306743 24.45034 11.453125 24.542969 C 11.511635 24.579989 11.575789 24.608506 11.640625 24.634766 L 11.644531 24.636719 C 11.659471 24.642719 11.67235 24.652903 11.6875 24.658203 C 11.716082 24.668202 11.735202 24.669403 11.773438 24.677734 C 11.925762 24.726927 12.079549 24.757812 12.216797 24.757812 C 12.80196 24.757814 13.160156 24.435547 13.160156 24.435547 L 13.181641 24.419922 L 16.191406 21.816406 L 19.841797 25.269531 C 19.893193 25.342209 20.372542 26 21.429688 26 C 22.057386 26 22.555319 25.685026 22.875 25.349609 C 23.194681 25.014192 23.393848 24.661807 23.478516 24.21875 L 23.478516 24.216797 C 23.557706 23.798129 26.921875 6.5273437 26.921875 6.5273438 L 26.916016 6.5507812 C 27.014496 6.1012683 27.040303 5.6826405 26.931641 5.2695312 C 26.822973 4.8564222 26.536648 4.4608905 26.181641 4.2480469 C 25.826669 4.0352506 25.479353 3.9700339 25.154297 3.984375 z M 24.966797 6.0742188 C 24.961997 6.1034038 24.970391 6.0887279 24.962891 6.1230469 L 24.960938 6.1347656 L 24.958984 6.1464844 C 24.958984 6.1464844 21.636486 23.196371 21.513672 23.845703 C 21.522658 23.796665 21.481573 23.894167 21.439453 23.953125 C 21.379901 23.91208 21.257812 23.859375 21.257812 23.859375 L 21.238281 23.837891 L 16.251953 19.121094 L 12.726562 22.167969 L 13.775391 17.96875 C 13.775391 17.96875 20.331562 11.182109 20.726562 10.787109 C 21.044563 10.471109 21.111328 10.360953 21.111328 10.251953 C 21.111328 10.105953 21.035234 10 20.865234 10 C 20.712234 10 20.506484 10.14875 20.396484 10.21875 C 18.963383 11.132295 12.671823 14.799141 9.8515625 16.439453 C 9.4033769 16.256034 6.2896636 14.981472 5.234375 14.550781 C 5.242365 14.547281 5.2397349 14.548522 5.2480469 14.544922 C 7.6958673 13.491784 12.47163 11.434667 16.720703 9.6074219 C 18.84524 8.6937992 20.838669 7.8379587 22.341797 7.1933594 C 23.821781 6.5586849 24.850125 6.1218894 24.966797 6.0742188 z" />
-                    </svg>
+                  </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="https://www.linkedin.com/in/avazbek-rashidov-065290209/" target="_blank">
-                  <svg class="socials__icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+                  <svg class="socials__icon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M2.4 0H21.6C22.92 0 24 1.08 24 2.4V21.6C24 22.92 22.92 24 21.6 24H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0ZM3.6 20.4H7.2V9.6H3.6V20.4ZM5.4 7.56C4.2 7.56 3.24 6.6 3.24 5.4C3.24 4.2 4.2 3.24 5.4 3.24C6.6 3.24 7.56 4.2 7.56 5.4C7.56 6.6 6.6 7.56 5.4 7.56ZM16.8 20.4H20.4V13.56C20.4 11.28 18.48 9.36 16.2 9.36C15.12 9.36 13.8 10.08 13.2 11.04V9.6H9.6V20.4H13.2V14.04C13.2 13.08 14.04 12.24 15 12.24C15.96 12.24 16.8 13.08 16.8 14.04V20.4Z"
-                     />
+                      d="M2.4 0H21.6C22.92 0 24 1.08 24 2.4V21.6C24 22.92 22.92 24 21.6 24H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0ZM3.6 20.4H7.2V9.6H3.6V20.4ZM5.4 7.56C4.2 7.56 3.24 6.6 3.24 5.4C3.24 4.2 4.2 3.24 5.4 3.24C6.6 3.24 7.56 4.2 7.56 5.4C7.56 6.6 6.6 7.56 5.4 7.56ZM16.8 20.4H20.4V13.56C20.4 11.28 18.48 9.36 16.2 9.36C15.12 9.36 13.8 10.08 13.2 11.04V9.6H9.6V20.4H13.2V14.04C13.2 13.08 14.04 12.24 15 12.24C15.96 12.24 16.8 13.08 16.8 14.04V20.4Z" />
                   </svg>
                 </a>
               </li>
@@ -369,84 +380,31 @@
         </div>
 
         <div class="contact__form">
-          <h2 class="contact__title">Contact me</h2>
-          <div class="contact-form__wrapper">
+          <h2 class="contact__title" data-aos="zoom-in">Contact me</h2>
+          <div class="contact-form__wrapper" data-aos="fade-up">
             <form class="contact-form__wrapper" action="">
               <input class="contact-form__input contact__name" type="text" placeholder="name">
               <input class="contact-form__input contact__email" type="text" placeholder="email">
               <input class="contact-form__input contact__subject" type="text" placeholder="subject">
-              <textarea class="contact-form__input contact__textarea" name="meassage me textarea" placeholder="message me"
-                minlength="2"></textarea>
+              <textarea class="contact-form__input contact__textarea" name="meassage me textarea"
+                placeholder="message me" minlength="2"></textarea>
             </form>
             <button class="contact-form__btn" type="submit">submit</button>
           </div>
         </div>
       </div>
-
-      <!-- <h2 class="contact__title">Contact me</h2>
-      <div class="contact__inner container">
-        <div class="contact-inner__info">
-          <ul class="contact__list">
-            <li class="contact-list__item">
-              <img class="contact-list__icon" src="icon/user-icon.svg" alt="user icon" width="30" height="30">
-              <div class="contact-list__details">
-                <span class="contact-list__details-name">Name</span>
-                <h3 class="conact-list__details-info">Abdulloh Rashidov</h3>
-              </div>
-            </li>
-            <li class="contact-list__item">
-              <img class="contact-list__icon" src="icon/location-icon.svg" alt="location icon" width="30" height="30">
-              <div class="contact-list__details">
-                <span class="contact-list__details-name">Address</span>
-                <h3 class="conact-list__details-info">Tashkent, Uzbekistan</h3>
-              </div>
-            </li>
-            <li class="contact-list__item">
-              <img class="contact-list__icon" src="icon/internet.svg" alt="internet icon" width="30" height="30">
-              <div class="contact-list__details">
-                <span class="contact-list__details-name">Email</span>
-                <h3 class="conact-list__details-info">avazbekrashidov6@gmail.com</h3>
-              </div>
-            </li>
-          </ul>
-
-          <ul class="socials">
-            <li class="socials__item">
-              <a class="socials__link" href="https://github.com/Rashidov01" target="_blank">
-                <img src="icon/github2.svg" alt="git hub icon" width="25" height="25">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://t.me/Rashidov_571" target="_blank">
-                <img src="icon/telegram.svg" alt="telegram icon" width="25" height="25">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://www.linkedin.com/in/avazbek-rashidov-065290209/" target="_blank">
-                <img src="icon/linkedin.svg" alt="linkedin hub icon" width="25" height="25">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contact-inner__form">
-          <form class="contact-form__wrapper" action="">
-            <input class="contact-form__input contact__name" type="text" placeholder="name">
-            <input class="contact-form__input contact__email" type="text" placeholder="email">
-            <input class="contact-form__input contact__subject" type="text" placeholder="subject">
-            <textarea class="contact-form__input contact__textarea" name="meassage me textarea" placeholder="message me"
-              cols="30" rows="10"></textarea>
-          </form>
-
-          <button class="contact-inner__btn" type="submit">submit</button>
-        </div>
-      </div> -->
     </section>
   </main>
   <!-- footer -->
   <footer class="footer">
     <span class="footer__text">Copyright © 2021 by Abdulloh</span>
   </footer>
+
   <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
