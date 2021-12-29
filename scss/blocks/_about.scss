@@ -107,7 +107,11 @@
   }
 }
 
-@include breakpoint-down(520px){
+@include breakpoint-down(420px){
+  .about-details__heading{
+    font-size: 13px;
+  }
+  
   .about__title{
     font-size: 30px;
 
