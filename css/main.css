@@ -267,7 +267,7 @@ main {
   display: flex;
   height: 100vh;
   width: 100%;
-  min-height: 500px;
+  min-height: 780px;
   color: #fff;
   background-image: url(../../img/background-img-2.svg);
   background-repeat: no-repeat;
@@ -517,25 +517,25 @@ main {
 
 @media only screen and (max-width: 500px) {
   .hero-inner__name {
-    font-size: 33px;
+    font-size: 38px;
   }
   .hero-inner__text {
-    font-size: 26px;
+    font-size: 24px;
   }
   .hero-inner__desc {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 420px) {
   .hero-inner__name {
-    font-size: 28px;
+    font-size: 35px;
   }
   .hero-inner__text {
     font-size: 20px;
   }
   .hero-inner__desc {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
