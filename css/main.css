@@ -94,6 +94,12 @@ main {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 780px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 .header {
   padding: 15px 0;
   position: fixed;
@@ -593,11 +599,6 @@ main {
   background-color: #fff;
 }
 
-.about-details__heading {
-  font-size: 30px;
-  font-weight: 600;
-}
-
 .type__second {
   color: #05B2DC;
 }
@@ -620,6 +621,8 @@ main {
 .about-wrapper__text {
   width: 700px;
   margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
 }
 
 @media only screen and (max-width: 1030px) {
@@ -650,21 +653,15 @@ main {
     width: 220px;
     height: 220px;
   }
-  .about-details__heading {
-    font-size: 24px;
-  }
 }
 
 @media only screen and (max-width: 520px) {
-  .about-details__heading {
-    font-size: 18px;
-  }
   .about-wrapper__text {
     font-size: 14px;
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 420px) {
   .about__title {
     font-size: 30px;
   }

@@ -5,3 +5,9 @@
   padding: 0 40px;
   margin: 0 auto;
 }
+
+@include breakpoint-down (780px){
+  .container{
+    padding: 0 20px;
+  }
+}

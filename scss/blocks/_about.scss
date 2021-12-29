@@ -35,11 +35,6 @@
   }
 }
 
-.about-details__heading{
-  font-size: 30px;
-  font-weight: 600;
-}
-
 .type__second{
   color: $primary-color;
 }
@@ -61,6 +56,8 @@
 .about-wrapper__text{
   width: 700px;
   margin-bottom: 25px;
+  font-family: $font-montserrat;
+  line-height: 30px;
 }
 
 @include breakpoint-down(1030px){
@@ -92,26 +89,15 @@
     width: 220px;
     height: 220px;
   }
-.about-details__heading{
-  font-size: 24px;
-}
 }
 
 @include breakpoint-down(520px){
-  .about-details__heading{
-    font-size: 18px;
-  }
-
   .about-wrapper__text{
     font-size: 14px;
   }
 }
 
 @include breakpoint-down(420px){
-  .about-details__heading{
-    font-size: 13px;
-  }
-  
   .about__title{
     font-size: 30px;
 
