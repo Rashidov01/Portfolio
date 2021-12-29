@@ -267,7 +267,7 @@ main {
   display: flex;
   height: 100vh;
   width: 100%;
-  min-height: 780px;
+  min-height: 680px;
   color: #fff;
   background-image: url(../../img/background-img-2.svg);
   background-repeat: no-repeat;
