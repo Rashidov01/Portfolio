@@ -1,14 +1,14 @@
 // window design
-var elNavbar = document.querySelector(".navbar");
+var elHeader = document.querySelector(".header");
 var elBtn = document.querySelector('.scroll-up-btn')
 
 window.addEventListener("scroll", function(){
     if(this.scrollY > 20){
-        elNavbar.classList.add("sticky");
+        elHeader.classList.add("sticky");
     }else{
-        elNavbar.classList.remove("sticky");
+        elHeader.classList.remove("sticky");
     };
-    if(this.scrollY > 500){
+    if(this.scrollY > 1200){
         elBtn.classList.add("show");
     }else{
         elBtn.classList.remove("show");
@@ -37,6 +37,11 @@ $('.scroll-up-btn').click(function(){
     $('html').css("scrollBehavior", "auto");
 });
 
+ $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
+
 //mode 
 let elToggler = document.querySelector('toggler');
 
@@ -44,9 +49,10 @@ elBtn.addEventListener('toggle', function(){
     document.body.classList.toggle('dark-theme')
 })
 
-let body = document.querySelector('body')
-let elButton = document.querySelector('.toggle')
+let elButton = document.querySelector('.navbar-menu__hamburg');
+let elNav = document.querySelector('.header__nav');
 
 elButton.addEventListener('click', function() {
-    body.classList.add('light-theme')
+    elNav.classList.toggle('active')
+    elButton.classList.toggle('active')
 })

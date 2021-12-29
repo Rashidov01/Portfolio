@@ -78,3 +78,278 @@
   left: 880px;
   font-size: 13px;
 }
+
+@include breakpoint-down(1050px){
+  .language__text--sass {
+    font-size: 22px;
+  }
+  
+  .language__text--figma {
+    font-size: 14px;
+  }
+  
+  .language__text--bem {
+    font-size: 8px;
+  }
+  
+  .language__text--html {
+    font-size: 18px;
+  }
+
+  .language__text--css {
+    top: 320px;
+    left: 40px;
+    font-size: 14px;
+  }
+  
+  .language__text--python {
+    top: 400px;
+    right: 40px;
+    font-size: 12px;
+  }
+
+  .language__text--cplus {
+    top: 420px;
+    left: 60%;
+    font-size: 14px;
+  }
+  
+  .language__text--es {
+    font-size: 12px;
+  }
+  
+  .language__text--sqlite {
+    font-size: 7px;
+    top: 350px;
+  }
+  
+  .language__text--jquery {
+    font-size: 15px;
+  }
+  
+  .language__text--res {
+    top: 340px;
+    left: 680px;
+    font-size: 9px;
+  }
+}
+
+@include breakpoint-down(780px){
+  .language__text--sass {
+    left: 20px;
+    font-size: 21px;
+  }
+  
+  .language__text--figma {
+    font-size: 16px;
+  }
+  
+  .language__text--bem {
+    font-size: 10px;
+  }
+  
+  .language__text--html {
+    font-size: 17px;
+  }
+  
+  .language__text--python {
+    top: 320px;
+    right: 50px;
+    font-size: 15px;
+  }
+  
+  .language__text--css {
+    top: 120px;
+    left: 45px;
+    font-size: 12px;
+  }
+  
+  .language__text--cplus {
+    top: 390px;
+    left: 70%;
+    font-size: 18px;
+  }
+  
+  .language__text--es {
+    left: 210px;
+    font-size: 17px;
+  }
+  
+  .language__text--sqlite {
+    bottom: -500px;
+    left: 400px;
+    font-size: 15px;
+  }
+  
+  .language__text--jquery {
+    top: 80px;
+    left: 75%;
+    font-size: 18px;
+  }
+  
+  .language__text--res {
+    top: 320px;
+    left: 40px;
+    font-size: 13px;
+  }
+}
+
+@include breakpoint-down(680px){
+  .language__text--sass {
+    left: 20px;
+    font-size: 17px;
+  }
+  
+  .language__text--figma {
+    font-size: 14px;
+  }
+  
+  .language__text--bem {
+    font-size: 8px;
+  }
+  
+  .language__text--html {
+    font-size: 12px;
+  }
+  
+  .language__text--python {
+    top: 320px;
+    right: 50px;
+    font-size: 11px;
+  }
+  
+  .language__text--css {
+    top: 140px;
+    left: 45px;
+    font-size: 12px;
+  }
+  
+  .language__text--cplus {
+    top: 370px;
+    left: 65%;
+    font-size: 14px;
+  }
+  
+  .language__text--es {
+    left: 240px;
+    top: 340px;
+    font-size: 13px;
+  }
+  
+  .language__text--sqlite {
+    top: 280px;
+    font-size: 15px;
+  }
+  
+  .language__text--jquery {
+    top: 80px;
+    left: 75%;
+    font-size: 18px;
+  }
+  
+  .language__text--res {
+    top: 320px;
+    left: 40px;
+    font-size: 13px;
+  }
+}
+
+@include breakpoint-down(580px){
+  
+  .language__text--bem {
+    font-size: 12px;
+    top: 65px;
+    left: 90px;
+  }
+  
+  
+  .language__text--sqlite {
+    top: 280px;
+    font-size: 15px;
+  }
+  
+  .language__text--jquery {
+    top: 110px;
+    left: 85%;
+    font-size: 15px;
+  }
+  
+  .language__text--res {
+    top: 320px;
+    left: 40px;
+    font-size: 13px;
+  }
+}
+@include breakpoint-down(460px){
+  .language__text--python {
+    top: 320px;
+    right: 50px;
+    font-size: 11px;
+  }
+  
+  .language__text--sqlite {
+    top: 280px;
+    left: 200px;
+    font-size: 15px;
+  }
+}
+
+@include breakpoint-down(420px){
+  .language__text--sass {
+    left: 20px;
+    font-size: 17px;
+  }
+  
+  .language__text--figma {
+    font-size: 14px;
+  }
+  
+  .language__text--bem {
+    font-size: 8px;
+  }
+  
+  .language__text--html {
+    font-size: 12px;
+  }
+  
+  .language__text--python {
+    top: 280px;
+    right: 40px;
+    font-size: 11px;
+  }
+  
+  .language__text--css {
+    top: 140px;
+    left: 45px;
+    font-size: 12px;
+  }
+  
+  .language__text--cplus {
+    top: 350px;
+    left: 68%;
+    font-size: 12px;
+  }
+  
+  .language__text--es {
+    left: 120px;
+    top: 360px;
+    font-size: 13px;
+  }
+  
+  .language__text--sqlite {
+    top: 250px;
+    font-size: 15px;
+  }
+  
+  .language__text--jquery {
+    top: 135px;
+    left: 70%;
+    font-size: 15px;
+  }
+  
+  .language__text--res {
+    top: 290px;
+    left: 40px;
+    font-size: 13px;
+  }
+}

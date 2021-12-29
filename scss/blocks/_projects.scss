@@ -10,6 +10,7 @@
   @include d-flex(center);
   color: $light-color;
   letter-spacing: 2px;
+  font-family: $font-ubuntu;
   font-size: 50px;
   font-weight: 800;
 
@@ -59,4 +60,61 @@
   text-decoration: none;
   border-radius: 10px;
   text-align: center;
+}
+
+@include breakpoint-down(1050px){
+  .projects__title{
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .projects-list__item{
+    width: calc(50% - 15px);
+  }
+
+  .projects__img{
+    height: 300px;
+  }
+}
+
+@include breakpoint-down(580px){
+  .projects__title{
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .projects-list__item{
+    width: 100%;
+  }
+
+}
+
+@include breakpoint-down(520px){
+  .projects__title{
+    font-size: 30px;
+
+    &::before {
+      width: 30px;
+      
+    }
+  
+    &::after {
+      width: 30px;
+    }
+  }
+}
+
+@include breakpoint-down(380px){
+  .projects__title{
+    font-size: 22px;
+
+    &::before {
+      width: 25px;
+      
+    }
+  
+    &::after {
+      width: 25px;
+    }
+  }
 }

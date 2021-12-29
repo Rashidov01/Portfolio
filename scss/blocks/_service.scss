@@ -10,6 +10,7 @@
 .service__title{
   margin-bottom: 50px;
   color: $light-color;
+  font-family: $font-ubuntu;
   letter-spacing: 2px;
   font-size: 50px;
   font-weight: 800;
@@ -65,9 +66,10 @@
 
 
 .service-list__title{
+  font-family: $font-ubuntu;
   font-weight: 600;
   font-size: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .icon{
@@ -75,4 +77,70 @@
   font-size: 50px;
   color: $primary-color;
   transition: color 0.3s ease;
+}
+
+@include breakpoint-down(1080px){
+  .service__title{
+    font-size: 40px;
+  }
+
+  .service__list{
+    flex-wrap: wrap;
+  }
+
+  .service-list__item{
+    padding: 30px 20px;
+  }
+
+  .service-list__title{
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .service-list__text{
+    font-size: 14px;
+  }
+
+  .icon{
+    font-size: 40px;
+  }
+}
+
+@include breakpoint-down(810px){
+  .service-list__item{
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+  }
+}
+
+@include breakpoint-down(520px){
+  .service__title{
+    font-size: 30px;
+
+    &::before {
+      width: 30px;
+      
+    }
+  
+    &::after {
+      width: 30px;
+    }
+  }
+}
+
+@include breakpoint-down(380px){
+  .projects__title{
+    font-size: 22px;
+
+    &::before {
+      width: 25px;
+      
+    }
+  
+    &::after {
+      width: 25px;
+    }
+  }
 }

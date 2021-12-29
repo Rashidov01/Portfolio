@@ -1,62 +1,83 @@
-.navbar {
-  padding: 15px 0;
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  transition: all 0.3s ease;
-}
-
-.navbar-inner {
-  @include d-flex(space-between)
-}
-
-.nav-inner{
-  display: flex;
-  align-items: center;
-}
-
-.user-name{
+.user-name {
   color: $light-color;
 }
 
-.navbar.sticky{
-  padding: 0;
-  background-color: $dark-blue;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.navbar.sticky .theme-icon{
-  background-color: transparent;
-  border: none;
-}
-
-.theme-icon{
+.theme-icon {
   padding: 0;
   background-image: url(../../icon/sun-icon.svg);
   background-color: transparent;
   @include background-image(contain);
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-.navbar-menu {
+.navbar-menu__hamburg {
+  background-image: url(../../icon/hamburg-menu.svg);
+  @include background-image(contain);
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__nav {
   @include list-unstyled;
   display: flex;
   align-items: center;
 }
-.navbar-menu__item {
+
+.header-nav__item {
   margin-right: 25px;
 }
-.navbar-menu__link {
+
+.header-nav__link {
   text-decoration: none;
   color: $light-color;
   font-weight: 600;
   transition: color 0.4s ease;
 
-  &:hover{
+  &:hover {
     color: $primary-color;
+  }
+}
+
+@include breakpoint-down(680px) {
+  .header__nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-background-color;
+    transition: all 0.4s ease;
+  }
+
+  .header__nav.active{
+    left: 0;
+  }
+  .navbar-menu__hamburg {
+    display: block;
+    z-index: 101;
+  }
+
+  .navbar-menu__hamburg.active{
+    background-image: url(../../icon/close-btn-white.svg);
+  }
+
+  .header-nav__item{
+    display: block;
+    margin: 0;
+    font-size: 25px;
+    align-items: center;
+    margin-bottom: 20px;
   }
 }

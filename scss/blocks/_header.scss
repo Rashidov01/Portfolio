@@ -1,0 +1,22 @@
+.header {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.header-inner {
+  @include d-flex(space-between)
+}
+
+.header.sticky{
+  padding: 0;
+  background-color: $dark-blue;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.header.sticky .theme-icon{
+  background-color: transparent;
+  border: none;
+}

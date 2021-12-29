@@ -12,9 +12,9 @@
 
 .about__title{
   margin-bottom: 50px;
-  letter-spacing: 2px;
   @include d-flex(center);
-  text-align: center;
+  font-family: $font-ubuntu;
+  letter-spacing: 2px;
   color: $light-color;
   font-size: 50px;
   font-weight: 800;
@@ -48,7 +48,7 @@
   text-decoration: none;
   color: $light-color;
   background-color: $primary-color;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 10px;
   display: inline-block;
   transition: all ease 0.4s;
@@ -58,7 +58,66 @@
   }
 }
 
-.about__wrapper-text{
+.about-wrapper__text{
   width: 700px;
   margin-bottom: 25px;
+}
+
+@include breakpoint-down(1030px){
+  .about__title{
+    font-size: 40px;
+  }
+
+  .about__wrapper{
+    flex-direction: column;
+  }
+
+  .about-wrapper__icon{
+    width: 280px;
+    height: 280px;
+    margin-bottom: 40px;
+  }
+
+  .about-wrapper__text{
+    width: 100%;
+  }
+
+  .about__link{
+    padding: 8px 10px;
+  }
+}
+
+@include breakpoint-down (720px){
+  .about-wrapper__icon{
+    width: 220px;
+    height: 220px;
+  }
+.about-details__heading{
+  font-size: 24px;
+}
+}
+
+@include breakpoint-down(520px){
+  .about-details__heading{
+    font-size: 18px;
+  }
+
+  .about-wrapper__text{
+    font-size: 14px;
+  }
+}
+
+@include breakpoint-down(520px){
+  .about__title{
+    font-size: 30px;
+
+    &::before {
+      width: 30px;
+      
+    }
+  
+    &::after {
+      width: 30px;
+    }
+  }
 }

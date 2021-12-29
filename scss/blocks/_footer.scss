@@ -10,3 +10,13 @@
   font-size: 12px;
   font-weight: 100;
 }
+
+@include breakpoint-down(780px){
+  .footer{
+    padding: 8px 0;
+  }
+
+  .footer__text{
+    font-size: 8px;
+  }
+}

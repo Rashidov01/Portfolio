@@ -1,65 +1,61 @@
 .contact {
-  padding: 80px 0 150px 0;
+  padding: 80px 0;
   background-color: $main-background-color;
-  width: 100%;
 }
 
 .contact__inner{
-  @include d-flex(space-between);
   width: 100%;
 }
 
 .contact__title {
-  margin-bottom: 80px;
-  @include d-flex(center);
+  font-family: $font-ubuntu;
+  @include d-flex(flex-start);
   color: $light-color;
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 42px;
+  font-weight: 600;
   letter-spacing: 2px;
-
-  &::before {
-    margin-right: 15px;
-    width: 50px;
-    height: 3px;
-    background-color: $light-color;
-    content: '';
-  }
-
-  &::after {
-    margin-left: 15px;
-    width: 50px;
-    height: 3px;
-    background-color: $light-color;
-    content: '';
-  }
-}
-
-.contact__list {
-  @include list-unstyled;
   display: flex;
   flex-direction: column;
-}
-
-.contact-inner__form{
-  width: 550px;
-}
-
-.contact-list__details-name{
-  margin: 0;
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  color: $primary-color;
-}
-
-.contact-list__item {
-  margin-bottom: 20px;
-  display: flex;
   align-items: center;
 
-  &:last-child{
-    margin-bottom: 0;
+  &::after{
+    margin-top: 10px;
+    content: '';
+    background-color: $primary-color;
+    width: 40px;
+    height: 3px;
   }
+}
+
+.contact__socials{
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-socials__text{
+  width: 600px;
+  color: #fff;
+  font-family: $font-montserrat;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.contact__form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form__input.contact__textarea{
+  resize: none;
+  min-height: 96px;
+}
+
+.contact-form__wrapper{
+  width: 600px;
 }
 
 .contact-form__input{
@@ -74,24 +70,14 @@
   outline: none;
   font-weight: 400;
   background-color: rgba(0, 0, 0, 0.28);
-
+  
   &::placeholder{
-    color: $light-color;
+    color: #fff;
     font-size: 14px;
   }
 }
 
-.conact-list__details-info{
-  font-weight: 800;
-  font-size: 18px;
-  color: #e9e9e9;
-}
-
-.contact-list__icon{
-  margin-right: 25px;
-}
-
-.contact-inner__btn{
+.contact-form__btn{
   margin-top: 20px;
   padding: 10px 15px;
   background-color: $primary-color;
@@ -103,5 +89,47 @@
 
   &:hover{
     opacity: 0.8;
+  }
+}
+
+@include breakpoint-down(1040px){
+  .contact__title {
+    font-size: 35px;
+  }
+  
+  .contact-socials__text{
+    font-size: 14px;
+    width: 600px;
+  }
+}
+
+@include breakpoint-down(980px){
+  .contact__socials{
+    margin-bottom: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact__title{
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .contact-socials__text{
+    width: 100%;
+  }
+
+  .contact__form{
+    flex-direction: column;
+  }
+
+  .contact-form__btn{
+    margin-top: 10px;
+  }
+}
+
+@include breakpoint-down(780px){
+  .contact-form__wrapper{
+    width: 100%;
   }
 }
