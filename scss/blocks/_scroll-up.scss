@@ -26,3 +26,10 @@
 .scroll-up-btn:hover{
   filter: brightness(90%);
 }
+
+@include breakpoint-down(780px){
+  .scroll-up-btn{
+    right: 20px;
+    bottom: 6px;
+  }
+}

@@ -77,6 +77,12 @@
   }
 }
 
+@include breakpoint-down(780px){
+  .projects-list__item{
+    margin: 12px 0;
+  }
+}
+
 @include breakpoint-down(580px){
   .projects__title{
     font-size: 40px;
@@ -87,6 +93,9 @@
     width: 100%;
   }
 
+  .projects__name{
+    font-size: 16px;
+  }
 }
 
 @include breakpoint-down(520px){
