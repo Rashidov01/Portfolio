@@ -1,0 +1,124 @@
+  /* hero-section */
+   .site-hero {
+    margin-bottom: 115px;
+    position: relative;
+    z-index: -1;
+
+    &::before{
+      content: '';
+      background-image: url(../../img/mobile-img1.jpg);
+      @include bg-image (cover, center center, 100%, 310px);
+      top: -25px;
+      position: absolute;
+    }
+  }
+
+  .site-hero__title {
+    font-family: $heading-font;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    padding-top: 320px;
+    width: 311px;
+    margin-bottom: 32px;
+  }
+
+  .site-hero__btn {
+    background:$main-color;
+    padding: 17px 30px 17px 80px;
+    outline: none;
+    border: none;
+    font-family: $text-font;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $light-color;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+    transition: 0.5s ease;
+
+    &::before{
+      content: '';
+      position: absolute;
+      @include bg-image (20px 16px, center center, 48px, 48px);
+      background-image: url(../../img/V.svg);
+      background-color: rgba(0, 0, 0, 0.1);
+      left: 0;
+      top: 0;
+    }
+
+    &:hover{
+      background-color: $link-hover;
+    }
+  }
+
+  .site-hero__btn:hover.site-hero__btn::before {
+    background-image: url(../../img/btn-white.svg);
+  }
+
+
+  /* site-hero-tablet */
+
+  @media only screen and (min-width:580px) {
+    .site-hero {
+      background-image: url(../../img/tablet-img1.jpg);
+      @include bg-image (cover, center center, 100%, 480px);
+      position: relative;
+      z-index: 5;
+      margin-bottom: 140px;
+
+      &::before{
+        display: none;
+      }
+    }
+
+    .site-hero__holder {
+      position: absolute;
+      background-color: $background-color;
+      padding-top: 25px;
+      left: 0;
+      bottom: 0;
+    }
+
+    .site-hero__title {
+      padding-top: 0;
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (min-width:720px) {
+    .site-hero {
+      height: 600px;
+    }
+
+    .site-hero__holder {
+      padding-top: 35px;
+      padding-right: 40px;
+    }
+
+    .site-hero__title {
+      font-size: 40px;
+      width: 410px;
+    }
+  }
+
+  @media only screen and (min-width:720px) {
+    .site-hero__title {
+      width: 480px;
+    }
+  }
+
+  @media only screen and (min-width:940px) {
+    .site-hero {
+      background-image: url(../../img/desktop-img1.jpg);
+    }
+
+    .site-hero__title {
+      width: 310px;
+    }
+  }

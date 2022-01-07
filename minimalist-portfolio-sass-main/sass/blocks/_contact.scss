@@ -1,0 +1,80 @@
+/* contact-section*/
+.contact-me {
+  padding-bottom: 80px;
+}
+
+.contact-me__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-family: $heading-font;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  color: $main-color;
+}
+
+.contact-form__input-box {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.contact-form__label {
+  display: block;
+  font-size: 13px;
+  line-height: 30px;
+  color: rgba(51, 50, 61, 0.8);
+}
+
+.contact-form__input {
+  margin-top: 8px;
+  width: 100%;
+  border: none;
+  font-size: 13px;
+  line-height: 30px;
+  display: block;
+  padding: 9px 0 9px 16px;
+  background-color: rgba(51, 50, 61, 0.1);
+  outline: none;
+  color: #717079;
+
+  &::placeholder {
+    font-size: 13px;
+    line-height: 30px;
+    color: rgba(51, 50, 61, 0.4);
+  }
+}
+
+.contact-form__txt {
+  min-height: 96px;
+  resize: none;
+}
+
+.contact-form__btn {
+  padding: 17px 24px;
+  border: none;
+  background-color: $main-color;
+  color: $light-color;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  border: 1px solid $main-color;
+
+  &:hover {
+    background-color: #eaeaeb;
+    color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (min-width:980px) {
+  .contact-me {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-form__input {
+    min-width: 635px;
+  }
+}

@@ -1,0 +1,77 @@
+.bookmark-section__img {
+  @extend .manage-section__img;
+}
+
+.bookmark-site__title {
+  @extend .manage-site__title;
+}
+
+.bookmark-site__text {
+  @extend .manage-site__text;
+}
+
+.bookmark-section__links {
+  @extend .manage-section__links;
+}
+
+
+.bookmark-section__link {
+  @extend .manage-section__link;
+}
+
+.bookmark-section__btn {
+  @include primaryBtn;
+}
+
+.bookmark-section__info-site {
+  @extend .manage-section__info-site;
+}
+
+.bookmark-background__title {
+  @extend .manage-background__title;
+}
+
+.bookmark-background__desc {
+  @extend .manage-background__desc;
+}
+
+.bookmark-background__content {
+  @extend .manage-background__content;
+}
+
+.bookmark-background__img{
+  @extend .manage-background__img;
+
+  &:not(:last-child){
+    margin-bottom: 32px;
+  }
+}
+
+@include breakpoint-up (768px){
+  .bookmark-site__text{
+    width: 535px;
+  }
+}
+@include breakpoint-up (980px){
+  .bookmark-section__info{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bookmark-section__info-site{
+    margin-right: 90px;
+    padding-top: 25px;
+    height: 450px;
+    margin-bottom: 0;
+  }
+
+  .bookmark-site__text{
+    width: 350px;
+  }
+}
+
+@include breakpoint-up (1110px){
+  .bookmark-section__info-site{
+    margin-right: 125px;
+  }
+}
