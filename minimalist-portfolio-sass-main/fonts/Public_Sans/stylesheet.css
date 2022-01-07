@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Public Sans';
-    src: url('PublicSans-Regular.woff2') format('woff2'),
-        url('PublicSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
