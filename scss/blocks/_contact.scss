@@ -1,6 +1,8 @@
 .contact {
   padding: 80px 0;
-  background-color: $main-background-color;
+  background-image: url(../../img/light-bgi.svg);
+  @include background-image(cover);
+  background-attachment: fixed;
 }
 
 .contact__inner{
@@ -30,7 +32,7 @@
 .contact__socials{
   margin-bottom: 60px;
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -61,7 +63,7 @@
 .contact-form__input{
   margin-bottom: 12px;
   padding: 15px 10px;
-  display: block; 
+  display: block;
   width: 100%;
   border: none;
   color: $light-color;
@@ -69,8 +71,8 @@
   border-radius: 10px;
   outline: none;
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0.28);
-  
+  background-color: rgba(0, 0, 0, 0.5);
+
   &::placeholder{
     color: #fff;
     font-size: 14px;
@@ -96,7 +98,7 @@
   .contact__title {
     font-size: 35px;
   }
-  
+
   .contact-socials__text{
     font-size: 14px;
     width: 600px;

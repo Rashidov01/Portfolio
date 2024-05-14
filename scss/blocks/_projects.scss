@@ -1,12 +1,12 @@
-.projects{
+.projects {
   padding: 80px 30px;
   background-image: url(../../img/light-bgi.svg);
   @include background-image(cover);
   background-attachment: fixed;
 }
 
-.projects__title{
-  margin-bottom: 80px;
+.projects__title {
+  margin-bottom: 30px;
   @include d-flex(center);
   color: $light-color;
   letter-spacing: 2px;
@@ -14,56 +14,99 @@
   font-size: 50px;
   font-weight: 800;
 
-  &::before{
+  &::before {
     margin-right: 15px;
     background-color: $light-color;
     width: 50px;
     height: 3px;
-    content: '';
+    content: "";
   }
-  &::after{
+  &::after {
     margin-left: 15px;
-    background-color:$light-color;
+    background-color: $light-color;
     width: 50px;
     height: 3px;
-    content: '';
+    content: "";
   }
 }
 
-.projects__list{
-  margin-top: -18px;
-  margin-bottom: -18px;
+.projects__text {
+  margin: 0 auto;
+  width: 80%;
+  color: $light-color;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.project-list {
+  width: 100%;
   @include list-unstyled;
-  @include d-flex(space-between);
+  gap: 30px;
+  @include d-flex(center);
   flex-wrap: wrap;
 }
 
-.projects__name{
+.projects__name {
   color: $primary-color;
   text-decoration: underline;
 }
 
-.projects__img{
+.project-img {
   margin-bottom: 10px;
   width: 100%;
-  height: 380px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
   opacity: 0.7;
 }
 
-.projects-list__item{
-  margin: 18px 0;
+.project-item {
   padding: 10px 8px;
-  width: calc(33% - 15px);
+  width: calc(25% - 30px);
   background-color: $dark-blue;
   text-decoration: none;
   border-radius: 10px;
   text-align: center;
 }
 
+.project-item-body > ul {
+  @include list-unstyled;
+  @include d-flex(flex-start);
+  margin-bottom: 10px;
+}
+
+.project-item-body > ul > li {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: rgba(19, 41, 61, 0.6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.project-item-body > ul > li > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.project-item-body > span {
+  padding: 10px;
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  background-color: rgba(19, 41, 61, 0.6);
+  border-radius: 12px;
+}
+
 //new design
-.projects-add{
+.projects-add {
   display: flex;
   flex-direction: row;
   padding: 15px 10px;
@@ -73,11 +116,11 @@
   margin-bottom: 50px;
 }
 
-.projects__wrapper{
+.projects__wrapper {
   width: 100%;
 }
 
-.projects__image{
+.projects__image {
   width: 550px;
   height: 400px;
   object-fit: cover;
@@ -86,25 +129,25 @@
   opacity: 0.7;
 }
 
-.title{
+.title {
   color: $primary-color;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.text{
+.text {
   color: #fff;
   width: 480px;
   margin-bottom: 40px;
 }
 
-.languages{
+.languages {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
 }
 
-.item{
+.item {
   margin: 0;
   margin-right: 12px;
   background-color: $dark-blue;
@@ -114,71 +157,79 @@
   border-radius: 10px;
 }
 
-.link{
+.link {
   color: $primary-color;
   text-decoration: underline;
 }
 
-@include breakpoint-down(1050px){
-  .projects__title{
+@include breakpoint-down(1050px) {
+  .projects__title {
     font-size: 40px;
     margin-bottom: 50px;
   }
 
-  .projects-list__item{
-    width: calc(50% - 15px);
+  .project-list {
+    flex-wrap: wrap;
+    gap: 25px;
   }
 
-  .projects__img{
-    height: 300px;
+  .project-item {
+    width: calc(33% - 25px);
+  }
+
+  .project-item-body > ul > li > img {
+    width: 24px;
+    height: 24px;
   }
 }
 
-@include breakpoint-down(780px){
-  .projects-list__item{
-    margin: 12px 0;
-  }
-}
-
-@include breakpoint-down(580px){
-  .projects__title{
-    font-size: 40px;
-    margin-bottom: 50px;
+@include breakpoint-down(780px) {
+  .project-list {
+    gap: 25px;
   }
 
-  .projects-list__item{
+  .projects__text {
     width: 100%;
   }
 
-  .projects__name{
-    font-size: 16px;
+  .project-item {
+    width: calc(50% - 25px);
   }
 }
 
-@include breakpoint-down(520px){
-  .projects__title{
+@include breakpoint-down(580px) {
+  .projects__title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@include breakpoint-down(520px) {
+  .project-item {
+    width: 100%;
+  }
+
+  .projects__title {
     font-size: 30px;
 
     &::before {
       width: 30px;
-      
     }
-  
+
     &::after {
       width: 30px;
     }
   }
 }
 
-@include breakpoint-down(380px){
-  .projects__title{
+@include breakpoint-down(380px) {
+  .projects__title {
     font-size: 22px;
 
     &::before {
       width: 25px;
-      
     }
-  
+
     &::after {
       width: 25px;
     }

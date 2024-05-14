@@ -1,0 +1,130 @@
+.experience {
+  padding: 80px 0;
+  background-color: $main-background-color;
+}
+
+.experience__title {
+  margin-bottom: 50px;
+  @include d-flex(center);
+  color: $light-color;
+  letter-spacing: 2px;
+  font-family: $font-ubuntu;
+  font-size: 50px;
+  font-weight: 800;
+
+  &::before {
+    margin-right: 15px;
+    background-color: $light-color;
+    width: 50px;
+    height: 3px;
+    content: "";
+  }
+
+  &::after {
+    margin-left: 15px;
+    background-color: $light-color;
+    width: 50px;
+    height: 3px;
+    content: "";
+  }
+}
+
+.experience-container > ul {
+  @include list-unstyled;
+}
+
+.experience-container > ul > li {
+  @include d-flex(space-between);
+  margin-bottom: 50px;
+}
+
+.experience-container > ul > li > .head {
+  margin-right: 30px;
+  width: 10%;
+}
+
+.experience-container > ul > li > .body {
+  width: 90%;
+}
+
+.experience-container > ul > li > .head > img {
+  padding: 12px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(25, 100, 126, 0.7);
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.experience-container > ul > li > .body > p,
+.experience-container > ul > li > .body > h3 {
+  color: $light-color;
+}
+
+.experience-container > ul > li > .body > h3 {
+  font-weight: 800;
+  color: $primary-color;
+}
+
+@include breakpoint-down(1050px) {
+  .experience__title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@include breakpoint-down(580px) {
+  .experience__title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@include breakpoint-down(520px) {
+  .project-item {
+    width: 100%;
+  }
+
+  .experience__title {
+    font-size: 30px;
+
+    &::before {
+      width: 30px;
+    }
+
+    &::after {
+      width: 30px;
+    }
+  }
+}
+
+@include breakpoint-down(380px) {
+  .experience__title {
+    font-size: 22px;
+
+    &::before {
+      width: 25px;
+    }
+
+    &::after {
+      width: 25px;
+    }
+  }
+}
+
+@include breakpoint-down(720px) {
+  .experience-container > ul > li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-container > ul > li > .head {
+    margin-bottom: 20px;
+  }
+
+  .experience-container > ul > li > .head,
+  .experience-container > ul > li > .body {
+    width: 100%;
+  }
+}
