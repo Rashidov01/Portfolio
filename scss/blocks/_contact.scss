@@ -1,8 +1,10 @@
 .contact {
+  // padding: 80px 0;
+  // background-image: url(../../img/light-bgi.svg);
+  // @include background-image(cover);
+  // background-attachment: fixed;
   padding: 80px 0;
-  background-image: url(../../img/light-bgi.svg);
-  @include background-image(cover);
-  background-attachment: fixed;
+  background-color: $main-background-color;
 }
 
 .contact__inner{
