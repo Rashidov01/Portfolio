@@ -8,6 +8,7 @@
 }
 
 .service__title {
+  text-align: center;
   margin-bottom: 50px;
   color: $light-color;
   font-family: $font-ubuntu;
@@ -34,10 +35,13 @@
 
 .service__list {
   @include list-unstyled;
-  @include d-flex(space-between);
+  @include d-flex(center);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .service-list__item {
+  min-height: 550px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -46,7 +50,6 @@
   padding: 50px 35px;
   border-radius: 10px;
   width: calc(33% - 10px);
-  min-height: 400px;
   background-color: $main-background-color;
   text-align: center;
   transition: background-color 0.3s ease;
@@ -95,7 +98,7 @@
   }
 
   .service-list__item {
-    min-height: 350px;
+    min-height: 450px;
     padding: 30px 20px;
   }
 
@@ -113,12 +116,12 @@
   }
 }
 
-@include breakpoint-down(810px) {
+@include breakpoint-down(980px) {
   .service-list__item {
+    width: 100%;
     min-height: auto;
     padding: 40px 20px;
     margin-bottom: 20px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

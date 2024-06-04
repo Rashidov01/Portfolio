@@ -318,6 +318,9 @@ main {
 .header-nav__item {
   margin-right: 25px;
 }
+.header-nav__item:last-child {
+  margin-right: 0;
+}
 
 .header-nav__link {
   text-decoration: none;
@@ -329,7 +332,7 @@ main {
   color: #05B2DC;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 940px) {
   .header__nav {
     position: fixed;
     height: 100vh;
@@ -671,6 +674,8 @@ main {
   }
   .about__wrapper {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .about-wrapper__icon {
     width: 280px;
@@ -679,6 +684,7 @@ main {
   }
   .about-wrapper__text {
     width: 100%;
+    text-align: center;
   }
   .about__link {
     padding: 8px 10px;
@@ -718,6 +724,7 @@ main {
 }
 
 .service__title {
+  text-align: center;
   margin-bottom: 50px;
   color: #fff;
   font-family: "ubuntu", sans-serif, arial;
@@ -749,10 +756,13 @@ main {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .service-list__item {
+  min-height: 550px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -761,7 +771,6 @@ main {
   padding: 50px 35px;
   border-radius: 10px;
   width: calc(33% - 10px);
-  min-height: 400px;
   background-color: #13293D;
   text-align: center;
   transition: background-color 0.3s ease;
@@ -806,7 +815,7 @@ main {
     flex-wrap: wrap;
   }
   .service-list__item {
-    min-height: 350px;
+    min-height: 450px;
     padding: 30px 20px;
   }
   .service-list__title {
@@ -820,12 +829,12 @@ main {
     font-size: 40px;
   }
 }
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 980px) {
   .service-list__item {
+    width: 100%;
     min-height: auto;
     padding: 40px 20px;
     margin-bottom: 20px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

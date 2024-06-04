@@ -34,6 +34,10 @@
 
 .header-nav__item {
   margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .header-nav__link {
@@ -47,7 +51,7 @@
   }
 }
 
-@include breakpoint-down(680px) {
+@include breakpoint-down(940px) {
   .header__nav {
     position: fixed;
     height: 100vh;
